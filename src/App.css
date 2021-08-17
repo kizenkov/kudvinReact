@@ -1,0 +1,12 @@
+.app {
+  display: grid;
+  grid-template-areas: 'n'
+  'c'
+  'f';
+  grid-template-rows: 80px calc(100% - 230px) 150px;
+}
+
+.content {
+  grid-area: c;
+  height: calc(100vh - 80px);
+}

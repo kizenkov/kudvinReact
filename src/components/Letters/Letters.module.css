@@ -1,0 +1,53 @@
+.letters {
+    text-align: center;
+}
+
+h2 {
+    color:palevioletred;
+}
+
+.letterBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.letterBlock button {
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 5px 5px violet;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    font-size: 2em;
+}
+
+.letterBlock button:active {
+    position: relative;
+    left: 4px;
+    top: 4px;
+    box-shadow: 1px 1px 5px violet;
+}
+
+.word {
+    color: violet;
+    font-size: 30em;
+    font-weight: bolder;
+    height: 100%
+}
+
+button {
+    margin: 5px
+}
+
+.numbers {
+    margin-top: 16vh;
+}
+
+.helper img {
+    width: 10vw;
+    position: absolute;
+    bottom: 10vw;
+    left: 4vw
+}

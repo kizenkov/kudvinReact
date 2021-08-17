@@ -1,0 +1,70 @@
+/*all properties*/
+
+.examples {
+  text-align: center;
+}
+
+.examples .inline input {
+  width: 8vh;
+  height: 7vh;
+  font-size: 6vh;
+  font-weight: bold;
+  text-align: center;
+  color: darkgreen;
+  margin-left: 1vw;
+}
+
+.examples .inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  margin: 30px;
+  font-size: 3em;
+}
+
+.examples .blockExample div {
+  width: 35vw;
+  text-align: left;
+}
+
+.examples .blockExample {
+  padding-left: 10vw;
+}
+ 
+.examples .time {
+  color: brown;
+  font-size: 1.5em;
+  float: left;
+  margin: 20px 0 0 50px;
+}
+
+.examples .result {
+  color: blue;
+  font-size: 3em;
+  float: right;
+  margin: 0 70px 30px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+.examples button {
+  align-self: center;
+  background-color: aqua;
+  border-radius: .5em;
+  border: none;
+  width: 15vw;
+  height: 7vw;
+  font-size: 2.5vw;
+}
+
+.examples b {
+  margin-left: 1vw;
+}
+
+.helper img {
+  width: 10vw;
+  position: absolute;
+  bottom: 10vw;
+  left: 4vw
+}

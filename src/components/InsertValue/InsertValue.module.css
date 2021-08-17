@@ -1,0 +1,81 @@
+/*all properties*/
+
+.examples {
+  text-align: center;
+}
+
+.examples .inline input {
+  width: 8vh;
+  height: 7vh;
+  font-size: 6vh;
+  text-align: center;
+  color: darkgreen;
+  margin-left: 1vw;
+}
+
+.examples .inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  margin: 30px;
+  font-size: 3em;
+}
+
+.examples .blockExample div {
+  width: 35vw;
+  text-align: left;
+}
+
+.examples .blockExample {
+  padding-left: 10vw;
+}
+
+.examples .result {
+  color: blue;
+  font-size: 3.5vw;
+  float: right;
+  margin: 0 70px 30px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+.examples button {
+  align-self: center;
+  background-color: aqua;
+  border-radius: .5em;
+  border: none;
+  width: 15vw;
+  height: 7vw;
+  font-size: 2.5vw;
+}
+
+.examples button:active {
+  position: relative;
+  left: 4px;
+  top: 4px;
+  box-shadow: 1px 1px 5px violet;
+}
+
+.examples b {
+  margin-left: 1vw;
+}
+
+.examples .resultBlock {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  align-items: center;
+  justify-self: center;
+}
+
+.rest {
+  font-size: 2.5vw;
+  color: palevioletred;
+}
+
+.helper img {
+  width: 10vw;
+  position: absolute;
+  top: 30vw;
+  left: 4vw
+}

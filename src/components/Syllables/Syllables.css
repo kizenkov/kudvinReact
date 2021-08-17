@@ -1,0 +1,42 @@
+.syllables {
+    display: grid;
+    grid-template-rows: calc(100vh - 80px);
+    align-items: center;
+    justify-self: center;
+    margin: 0 10vw 0 10vw;
+}
+
+.syllables th {
+    font-size: 3vw;
+    padding: .5vw;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.syllables th:hover {
+    background-color: chartreuse;
+    cursor: zoom-in;
+}
+
+.syllables .newSyllable {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 25vw;
+    font-weight: bold;
+    background-color: chartreuse;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80vw;
+    height: 40vw;
+    margin: auto;
+    border-radius: .25em;
+    transition: all .25s;
+}
+
+.syllables .newSyllable:hover {
+    cursor: zoom-out;
+}

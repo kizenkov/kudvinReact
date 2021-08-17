@@ -1,0 +1,86 @@
+.tasks {
+    display: grid;
+    grid-template-rows: 25vw 18vh 18vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.task {
+    display: grid;
+    background-color: aqua;
+    border-radius: .5em;
+    padding: 0 6vw 0 6vw;
+    margin: 3vh 10vw 3vh 10vw;
+    font-size: 2.5vw;
+    align-items: center;
+    justify-self: center;
+}
+
+.answerBlock {
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+    height: 160px;
+}
+
+.inputAnswer {
+    width: 5vw;
+    height: 3vw;
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 20px;
+}
+
+.button {
+    align-self: center;
+    background-color: aqua;
+    border-radius: .5em;
+    border: none;
+    width: 15vw;
+    height: 7vw;
+    font-size: 2.5vw;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.result {
+    font-size: 7vw;
+    font-weight: bold;
+    font-family: cursive;
+    align-self: center;
+    justify-self: center;
+    height: 104px;
+}
+
+.table {
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    font-size: 3vw;
+    align-self: center;
+    justify-self: center;
+    margin-right: 50px;
+}
+
+th {
+    color: green;
+    width: 4vw;
+}
+
+td {
+    color: red;
+    width: 4vw;
+}
+
+.tasks span {
+    font-size: 2.5vw;
+}
+
+.helper img {
+    width: 10vw;
+    position: absolute;
+    top: 30vw;
+    left: 4vw
+}
