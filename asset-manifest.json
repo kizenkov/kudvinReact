@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/umnikiReact/static/css/main.13493f41.chunk.css",
+    "main.js": "/umnikiReact/static/js/main.71083635.chunk.js",
+    "main.js.map": "/umnikiReact/static/js/main.71083635.chunk.js.map",
+    "runtime-main.js": "/umnikiReact/static/js/runtime-main.bda9ed46.js",
+    "runtime-main.js.map": "/umnikiReact/static/js/runtime-main.bda9ed46.js.map",
+    "static/js/2.8fbb2a32.chunk.js": "/umnikiReact/static/js/2.8fbb2a32.chunk.js",
+    "static/js/2.8fbb2a32.chunk.js.map": "/umnikiReact/static/js/2.8fbb2a32.chunk.js.map",
+    "static/js/3.bea0fde4.chunk.js": "/umnikiReact/static/js/3.bea0fde4.chunk.js",
+    "static/js/3.bea0fde4.chunk.js.map": "/umnikiReact/static/js/3.bea0fde4.chunk.js.map",
+    "index.html": "/umnikiReact/index.html",
+    "static/css/main.13493f41.chunk.css.map": "/umnikiReact/static/css/main.13493f41.chunk.css.map",
+    "static/js/2.8fbb2a32.chunk.js.LICENSE.txt": "/umnikiReact/static/js/2.8fbb2a32.chunk.js.LICENSE.txt",
+    "static/media/helper.51cbcb29.gif": "/umnikiReact/static/media/helper.51cbcb29.gif",
+    "static/media/helper1.2b703c0d.gif": "/umnikiReact/static/media/helper1.2b703c0d.gif",
+    "static/media/helper2.fbb2eb3d.gif": "/umnikiReact/static/media/helper2.fbb2eb3d.gif",
+    "static/media/helper3.a017637d.gif": "/umnikiReact/static/media/helper3.a017637d.gif",
+    "static/media/no.186ad23f.mp3": "/umnikiReact/static/media/no.186ad23f.mp3",
+    "static/media/yes.d5ed5574.mp3": "/umnikiReact/static/media/yes.d5ed5574.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bda9ed46.js",
+    "static/js/2.8fbb2a32.chunk.js",
+    "static/css/main.13493f41.chunk.css",
+    "static/js/main.71083635.chunk.js"
+  ]
+}
