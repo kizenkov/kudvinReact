@@ -1,7 +1,7 @@
 .navbar {
     grid-area: n;
     display: grid;
-    grid-template-columns: repeat(6, calc(100vw/6));
+    grid-template-columns: repeat(7, calc(100vw/7));
     position: fixed;
     height: 80px;
     z-index: 10;
@@ -39,7 +39,7 @@ a, .navbar span {
     position: absolute;
     top: 80px;
     z-index: 12;
-    width: calc(100vw/6);
+    width: calc(100vw/7);
     margin: 0;
     display: none;
     list-style: none;

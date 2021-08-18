@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ccc0f47-c84b-4be3-b90f-9d9c64d2d083" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Homepage/Homepage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Homepage/Homepage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Letters/Letters.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Letters/Letters.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Numbers/Numbers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Numbers/Numbers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popit/Block.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popit/Block.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popit/Popit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popit/Popit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Popit/Popit.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Popit/Popit.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +63,7 @@
       <workItem from="1629143001037" duration="13807000" />
       <workItem from="1629201535486" duration="17790000" />
       <workItem from="1629239292804" duration="398000" />
-      <workItem from="1629239695313" duration="1402000" />
+      <workItem from="1629239695313" duration="12489000" />
     </task>
     <servers />
   </component>

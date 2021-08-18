@@ -43,6 +43,7 @@ function Navbar() {
                 </div>
             <NavLink to='/insertValue' onClick={deleteActiveClass}>Вставить</NavLink>
             <NavLink to='/tasks' onClick={deleteActiveClass}>Задачки</NavLink>
+            <NavLink to='/popit' onClick={deleteActiveClass}>Попит</NavLink>
         </div>
     )
 }

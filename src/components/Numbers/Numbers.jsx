@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import classes from './../Letters/Letters.module.css';
 import helper from "../../files/helper2.gif";
+import {Redirect} from 'react-router-dom';
 
-function Numbers() {
+function Numbers({isLogged}) {
 
     const ref = useRef();
 
@@ -36,6 +37,8 @@ function Numbers() {
         }
         ref.current.innerHTML = words[i];
     }
+
+    if (!isLogged) return <Redirect to="/"  />
 
     return (
         <div className={classes.letters + ' ' + classes.numbers}>

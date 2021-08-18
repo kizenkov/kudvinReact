@@ -3,3 +3,12 @@
     background-color: darkgrey;
     color: white;
 }
+
+.footer img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.footer a {
+    display: inline-block;
+}
