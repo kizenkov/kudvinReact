@@ -35,7 +35,7 @@ function Navbar() {
             <NavLink to='/syllables' onClick={deleteActiveClass}>Слоги</NavLink>
             <NavLink to='/numbers' onClick={deleteActiveClass}>Счёт</NavLink>
             <div ref={div} onMouseLeave={notShow} className={classes.menu}>
-                <span onMouseOver={show} onClick={show} ref={span} className={classes.menuName}>Примеры</span>
+                <span onMouseOver={show} ref={span} className={classes.menuName}>Примеры</span>
                     <ul ref={ul}>
                         <li><NavLink to='/examples' onClick={() => ul.current['style'].display = 'none'}>Легкие</NavLink></li>
                         <li><NavLink to='/hardExamples' onClick={() => ul.current['style'].display = 'none'}>Сложные</NavLink></li>

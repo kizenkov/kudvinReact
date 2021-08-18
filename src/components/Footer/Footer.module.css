@@ -1,14 +1,48 @@
 .footer {
     grid-area: f;
-    background-color: darkgrey;
+    background-color: dimgray;
     color: white;
+    display: inline-flex;
+    align-items: center;
+}
+
+.text {
+    font-size: 16px;
+    margin: 35px 10px 30px 30px;
 }
 
 .footer img {
-    width: 50px;
+    width: 58px;
     border-radius: 50%;
 }
 
-.footer a {
-    display: inline-block;
+@keyframes viber {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.footer .viber {
+    width: 50px;
+    background-color: white;
+    padding: 4px;
+    animation-name: viber;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.link {
+    padding: 0 10px 10px;
 }

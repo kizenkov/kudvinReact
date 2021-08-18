@@ -6,12 +6,12 @@ import viber from "../../files/viber.png";
 function Footer() {
     return (
         <div className={classes.footer}>
-            footer
-            <a href="http://t.me/umnikill">
+            <span className={classes.text}>Контакты для отзывов и предложений: </span>
+            <a className={classes.link} href="http://t.me/umnikill">
                 <img src={icontg} alt=""/>
             </a>
-            <a href="/">
-                <img src={viber} alt=""/>
+            <a className={classes.link} href="viber://chat?number=%2B375336950899">
+                <img className={classes.viber} src={viber} alt=""/>
             </a>
         </div>
     )

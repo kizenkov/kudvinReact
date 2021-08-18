@@ -2,8 +2,9 @@ import classes from './Examples.module.css';
 import {useRef, useState} from 'react';
 import Example from './Example';
 import helper from "../../files/helper4.gif";
+import {Redirect} from "react-router-dom";
 
-function Examples({n}) {
+function Examples({n, isLogged}) {
 
     const [A1, setA1] = useState(Math.trunc(Math.random() * (n - 1) + 1));
     const [B1, setB1] = useState(Math.trunc(Math.random() * (n - 1) + 1));
@@ -100,6 +101,8 @@ function Examples({n}) {
             }
         }, 3000);
     }
+
+    if (!isLogged) return <Redirect to="/"  />
 
     return (
         <div className={classes.examples}>

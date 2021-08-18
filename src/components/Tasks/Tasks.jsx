@@ -1,10 +1,11 @@
 import classes from './Tasks.module.css';
-import {useRef, useEffect} from 'react';
+import React, {useRef, useEffect} from 'react';
 import yes from './../../files/yes.mp3';
 import no from './../../files/no.mp3';
 import helper from './../../files/helper.gif';
+import {Redirect} from "react-router-dom";
 
-function Tasks() {
+function Tasks({isLogged}) {
     const task = useRef();
     const result = useRef();
     const button = useRef();
@@ -36,7 +37,9 @@ function Tasks() {
 
     useEffect(
         () => {
-            task.current.innerHTML = tasks[i];
+            if(isLogged) {
+                task.current.innerHTML = tasks[i];
+            }
         }, []
     );
 
@@ -99,6 +102,8 @@ function Tasks() {
             }
         }
     }
+
+    if (!isLogged) return <Redirect to="/"  />
 
     return (
         <div className={classes.tasks}>

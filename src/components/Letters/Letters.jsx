@@ -1,8 +1,9 @@
 import { useRef } from 'react';
 import classes from './Letters.module.css';
 import helper from "../../files/helper3.gif";
+import {Redirect} from "react-router-dom";
 
-function Letters() {
+function Letters({isLogged}) {
 
     const ref = useRef();
 
@@ -14,7 +15,7 @@ function Letters() {
     words.push('Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь');
     words.push('Э', 'Ю', 'Я');
 
-    let colorsArray = ['green', 'red', 'blue', 'chocolate', 'darkmagenta', 'magenta', 'darkorange'];
+    let colorsArray = ['green', 'blue', 'magenta', 'darkorange'];
 
     function disabled(e) {
         words.splice(words.indexOf(e.currentTarget.innerHTML), 1);
@@ -44,6 +45,8 @@ function Letters() {
         }
         ref.current.innerHTML = words[i];
     }
+
+    if (!isLogged) return <Redirect to="/"  />
 
     return (
         <div className={classes.letters}>

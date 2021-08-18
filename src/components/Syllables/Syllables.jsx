@@ -1,8 +1,9 @@
 import './Syllables.css';
 import {useRef} from 'react';
 import React from 'react'
+import {Redirect} from "react-router-dom";
 
-function Syllables() {
+function Syllables({isLogged}) {
 
     const syllable = useRef();
 
@@ -14,6 +15,8 @@ function Syllables() {
             syllable.current.className = '';
         }
     }
+
+    if (!isLogged) return <Redirect to="/"  />
 
     return (<div className='syllables'>
                 <table border='1'>

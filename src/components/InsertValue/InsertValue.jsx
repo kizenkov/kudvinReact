@@ -3,8 +3,9 @@ import {useRef, useState, useEffect} from 'react';
 import ExampleValue1 from './ExampleValue1';
 import ExampleValue2 from './ExampleValue2';
 import helper from '../../files/helper1.gif';
+import {Redirect} from "react-router-dom";
 
-function InsertValue() {
+function InsertValue({isLogged}) {
     let [sec, setSec] = useState(60);
 
     const [A1, setA1] = useState(Math.trunc(Math.random() * 11));
@@ -130,6 +131,8 @@ function InsertValue() {
             }
         }, 3000);
     }
+
+    if (!isLogged) return <Redirect to="/"  />
 
     return (
         <div className={classes.examples}>
