@@ -8,20 +8,32 @@ import Syllables from './components/Syllables/Syllables';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import {Route} from 'react-router-dom';
-import Homepage from "./components/Homepage/Homepage";
+import Main from "./components/Main/Main";
 import Popit from "./components/Popit/Popit";
+import {useState} from "react";
+import Header from "./components/Header/Header";
 
 function App() {
 
-    let isLogged = false;
-    let setIsLogged = () => {
-        isLogged = true;
+    const [isLogged, setIsLogged] = useState(false)
+    const [isClicked, setIsClicked] = useState(false)
+
+    let setLogged = () => {
+        setIsLogged(true);
+        window.scrollTo(0, 0);
+    }
+    function clicked() {
+        setIsClicked(true);
+        window.scrollTo(0, 0);
     }
     return (
         <div className='app'>
-            <Navbar/>
+            <Header isLogged={isLogged} setLogged={setLogged} clicked={clicked}/>
+            {isLogged ? <Navbar/> : null}
             <div className='content'>
-                <Route exact path='/' render={() => <Homepage setIsLogged={setIsLogged}/>}/>
+                <Route exact path='/' render={() => <Main isClicked={isClicked} isLogged={isLogged}/>}/>
+                <Route path='/main' render={() => <Main isClicked={isClicked}
+                                                        isLogged={isLogged} />}/>
                 <Route path='/letters' render={() => <Letters isLogged={isLogged}/>}/>
                 <Route path='/syllables' render={() => <Syllables isLogged={isLogged}/>}/>
                 <Route path='/numbers' render={() => <Numbers isLogged={isLogged}/>}/>
@@ -31,7 +43,7 @@ function App() {
                 <Route path='/insertValue' render={() => <InsertValue isLogged={isLogged}/>}/>
                 <Route path='/popit' render={() => <Popit/>}/>
             </div>
-            <Footer/>
+            <Footer clicked={clicked}/>
         </div>
     )
 }

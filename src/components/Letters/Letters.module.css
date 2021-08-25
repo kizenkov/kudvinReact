@@ -3,7 +3,7 @@
 }
 
 .letters h2 {
-    color:palevioletred;
+    color:saddlebrown;
 }
 
 .letterBlock {
@@ -38,7 +38,15 @@
 }
 
 button {
-    margin: 5px
+    color: saddlebrown;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .numbers {

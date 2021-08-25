@@ -40,7 +40,7 @@ function Tasks({isLogged}) {
             if(isLogged) {
                 task.current.innerHTML = tasks[i];
             }
-        }, []
+        }, [isLogged, i]
     );
 
     let results = [8, 11, 5, 10, 4, 2, 13, 4, 10, 15, 10, 3, 11, 2, 0];

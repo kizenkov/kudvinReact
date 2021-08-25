@@ -11,12 +11,12 @@ function Navbar() {
     function show() {
         ul.current['style'].display = 'block';
         span.current['style'].fontWeight = 'bolder';
-        div.current['style'].backgroundColor = 'white';
+        div.current['style'].backgroundColor = 'saddlebrown';
     }
     function notShow() {
         ul.current['style'].display = 'none';
         span.current['style'].fontWeight = '';
-        div.current['style'].backgroundColor = 'skyblue';
+        div.current['style'].backgroundColor = 'saddlebrown';
     }
     // function addActiveClass() {
     //     ul.current.style.display = 'none';
@@ -25,8 +25,9 @@ function Navbar() {
     // }
     function deleteActiveClass() {
         ul.current['style'].display = 'none';
-        div.current['style'].backgroundColor = 'skyblue';
+        div.current['style'].backgroundColor = 'saddlebrown';
         span.current['style'].fontWeight = '';
+        window.scrollTo(0, 0);
     }
    
     return (
@@ -37,13 +38,18 @@ function Navbar() {
             <div ref={div} onMouseLeave={notShow} className={classes.menu}>
                 <span onMouseOver={show} onClick={show} ref={span} className={classes.menuName}>Примеры</span>
                     <ul ref={ul}>
-                        <li><NavLink to='/examples' onClick={() => ul.current['style'].display = 'none'}>Легкие</NavLink></li>
-                        <li><NavLink to='/hardExamples' onClick={() => ul.current['style'].display = 'none'}>Сложные</NavLink></li>
+                        <li><NavLink to='/examples' onClick={() => {ul.current['style'].display = 'none';
+                            window.scrollTo(0, 0);
+                        }}>Легкие</NavLink></li>
+                        <li><NavLink to='/hardExamples' onClick={() => {
+                            ul.current['style'].display = 'none';
+                            window.scrollTo(0, 0);
+                        }}>Сложные</NavLink></li>
                     </ul>
                 </div>
             <NavLink to='/insertValue' onClick={deleteActiveClass}>Вставить</NavLink>
             <NavLink to='/tasks' onClick={deleteActiveClass}>Задачки</NavLink>
-            <NavLink to='/popit' onClick={deleteActiveClass}>Попит</NavLink>
+            {/*<NavLink to='/popit' onClick={deleteActiveClass}>Попит</NavLink>*/}
         </div>
     )
 }

@@ -1,0 +1,93 @@
+.header {
+    grid-area: h;
+    position: fixed;
+    z-index: 9;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    background-color: saddlebrown;
+}
+
+@keyframes logo {
+    0% {
+        color: chartreuse;
+    }
+    20% {
+        color: yellow;
+    }
+    40% {
+        color: gold;
+    }
+    60% {
+        color: cyan;
+    }
+    80% {
+        color: mediumorchid;
+    }
+    100% {
+        color: chartreuse;
+    }
+}
+.logo {
+    text-align: left;
+    font-size: 2.5vw;
+    color: chartreuse;
+    font-family: Leelawadee, cursive;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0;
+    animation-name: logo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition-property: margin-left;
+    transition-duration: 0.3s;
+    height: 50px;
+}
+
+.logo:hover {
+    margin-left: 10px;
+}
+
+.main {
+    display: grid;
+    align-content: center;
+}
+
+.form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    height: 40px;
+    width: 20vw;
+    color: green;
+}
+
+.input:focus {
+    text-decoration: none;
+}
+
+.submit {
+    border-radius: 50%;
+    font-size: 20px;
+    color: chartreuse;
+    background-color: white;
+    border: none;
+    margin: 20px;
+}
+
+.message {
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    color: gold;
+}

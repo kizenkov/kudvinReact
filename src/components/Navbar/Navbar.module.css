@@ -1,12 +1,13 @@
 .navbar {
     grid-area: n;
     display: grid;
-    grid-template-columns: repeat(7, calc(100vw/7));
+    grid-template-columns: repeat(6, calc((100vw - 300px)/6));
     position: fixed;
-    height: 80px;
+    height: 50px;
     z-index: 10;
-    background-color: skyblue;
-    font-size: min(24px, 2.5vw)
+    background-color: saddlebrown;
+    font-size: 1.5vw;
+    margin-left: 300px;
 }
 
 a, .navbar span {
@@ -14,9 +15,8 @@ a, .navbar span {
     align-items: center;
     text-align: center;
     text-decoration: none;
-    color: palevioletred;
-    padding: 20px;
-    height: 40px;
+    color: white;
+    height: 50px;
 }
 
 .navbar a:hover, .menuName:hover {
@@ -24,22 +24,23 @@ a, .navbar span {
     font-weight: bolder;
     background-color: white;
     cursor: pointer;
+    color: saddlebrown;
     /* box-shadow: 0 0 5px 10px wheat; */
 }
 
 .navbar .active {
-    background-color: wheat;
+    background-color: saddlebrown;
     /* box-shadow: 0 0 5px 10px wheat; */
     font-weight: bolder;
 }
 
 
 .menu ul {
-    background-color: skyblue;
+    background-color: saddlebrown;
     position: absolute;
-    top: 80px;
+    top: 50px;
     z-index: 12;
-    width: calc(100vw/7);
+    width: calc((100vw - 300px)/6);
     margin: 0;
     display: none;
     list-style: none;
@@ -48,4 +49,41 @@ a, .navbar span {
 
 .show {
     display: block;
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar {
+        grid-template-columns: repeat(6, calc((100vw - 200px)/6));
+        margin-left: 200px;
+    }
+    .menu ul {
+        width: calc((100vw - 200px)/6);
+    }
+}
+@media screen and (max-width: 1000px) {
+    .navbar {
+        grid-template-columns: repeat(6, calc((100vw - 150px)/6));
+        margin-left: 150px;
+    }
+    .menu ul {
+        width: calc((100vw - 150px)/6);
+    }
+}
+@media screen and (max-width: 750px) {
+    .navbar {
+        grid-template-columns: repeat(6, calc((100vw - 100px)/6));
+        margin-left: 100px;
+    }
+    .menu ul {
+        width: calc((100vw - 100px)/6);
+    }
+}
+@media screen and (max-width: 550px) {
+    .navbar {
+        grid-template-columns: repeat(6, calc((100vw - 80px)/6));
+        margin-left: 80px;
+    }
+    .menu ul {
+        width: calc((100vw - 80px)/6);
+    }
 }

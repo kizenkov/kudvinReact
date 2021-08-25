@@ -1,14 +1,32 @@
 .footer {
     grid-area: f;
-    background-color: dimgray;
+    background-color: black;
     color: white;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+
+.footer1 {
     display: inline-flex;
     align-items: center;
 }
 
+.footer2 {
+    display: grid;
+    justify-content: end;
+}
+
+.footer a {
+    color: white;
+}
+
 .text {
     font-size: 16px;
-    margin: 35px 10px 30px 30px;
+    margin: 0 10px 0 30px;
+    display: grid;
+    align-items: center;
+
 }
 
 .footer img {
@@ -43,6 +61,44 @@
     animation-iteration-count: infinite;
 }
 
+@keyframes vk {
+    0% {
+        transform: scale(1);
+        padding: 4px;
+    }
+    10% {
+        transform: scale(1.08);
+        padding: 2px;
+    }
+    20% {
+        transform: scale(1);
+        padding: 4px;
+    }
+    30% {
+        transform: scale(1.08);
+        padding: 2px;
+    }
+    40% {
+        transform: scale(1);
+        padding: 4px;
+    }
+    100% {
+        transform: scale(1);
+        padding: 4px;
+    }
+}
+
+.footer .vk {
+    width: 50px;
+    background-color: white;
+    padding: 4px;
+    animation-name: vk;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
 .link {
+    width: 58px;
     padding: 0 10px 10px;
+    display: inline;
 }
